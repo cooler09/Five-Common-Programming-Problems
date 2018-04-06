@@ -9,14 +9,22 @@ namespace CommonProblems.UnitTests
         [TestMethod]
         public void GetFibonacciNums_WhenCalled_ShouldReturnFibonacciNums()
         {
-            var expected = new long[]
+            var expected = new string[]
             {
-                0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584,4181,6765,10946,17711,28657,46368,75025,121393,
-                196418,317811,514229,832040,1346269,2178309,3524578,5702887,9227465,14930352,24157817,39088169,63245986,
-                102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049
+                "1 + 2 + 3 - 4 + 5 + 6 + 78 + 9",
+                "1 + 2 + 34 - 5 + 67 - 8 + 9",
+                "1 + 23 - 4 + 5 + 6 + 78 - 9",
+                "1 + 23 - 4 + 56 + 7 + 8 + 9",
+                "12 + 3 + 4 + 5 - 6 - 7 + 89",
+                "12 + 3 - 4 + 5 + 67 + 8 + 9",
+                "12 - 3 - 4 + 5 - 6 + 7 + 89",
+                "123 + 4 - 5 + 67 - 89",
+                "123 + 45 - 67 + 8 - 9",
+                "123 - 4 - 5 - 6 - 7 + 8 - 9",
+                "123 - 45 - 67 + 89"
             };
 
-            var actual = ProblemThree.GetFibonacciNums(50);
+            var actual = ProblemFive.GetAllCombinations();
 
             CollectionAssert.AreEqual(expected, actual);
         }
