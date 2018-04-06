@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProblemTwo
+namespace CommonProblems
 {
-    public static class Problem
+    public static class ProblemTwo
     {
         public static List<T> ListCombiner<T>(List<T> listOne, List<T> listTwo)
         {

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6DE2AFC9-22FF-4D3F-8845-E9CA9F300FE5}</ProjectGuid>
+    <ProjectGuid>{D3D639A6-D263-4764-AAC5-3CEA07403B23}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProblemFour.UnitTests</RootNamespace>
-    <AssemblyName>ProblemFour.UnitTests</AssemblyName>
+    <RootNamespace>CommonProblems.UnitTests</RootNamespace>
+    <AssemblyName>CommonProblems.UnitTests</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -48,16 +48,17 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="ProblemOneTests.cs" />
+    <Compile Include="ProblemTwoTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ProblemFour\ProblemFour.csproj">
-      <Project>{e782a483-876b-4c43-a4ba-3d8b24f1de5c}</Project>
-      <Name>ProblemFour</Name>
+    <ProjectReference Include="..\CommonProblems\CommonProblems.csproj">
+      <Project>{8ed4326c-b60a-47cd-b9d0-feda01b87feb}</Project>
+      <Name>CommonProblems</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

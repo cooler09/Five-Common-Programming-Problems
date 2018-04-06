@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProblemOne
+namespace CommonProblems
 {
-    public static class Problem
+    public static class ProblemOne
     {
         public static int SumWithForLoop(int[] numbers)
         {
